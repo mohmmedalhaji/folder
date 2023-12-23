@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Appliances</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body class="Q1">
+  <h1 class="qq">متجر الأجهزة المنزلية</h1>
+ 
+  <h2>المنتجات المنزلية</h2>
+<ul class="E1">
+  <li>
+    <img src="pictures/Samsung's Brad.jpg" alt="    براد سامسونج بابين">
+    <h3>براد سامسونج بابين</h3>
+    <p>السعر: 6,500,000 ل.س</p>
+    <button onclick="addToCart(1)">Add To Cart</button>
+  </li>
+  <li>
+    <img src="pictures/Samsung washing machine.jpg" alt="غسالة إل جي 6 كغ">
+    <h3>غسالة إل جي 6 كغ</h3>
+    <p>السعر: 4,000,000 ل.س</p>
+    <button onclick="addToCart(2)">Add To Cart</button>
+  </li>
+  <li>
+    <img src="pictures/Two-door refrigerator.jpg" alt="ثلاجة بابين مع فريزر">
+    <h3>ثلاجة بابين مع فريزر</h3>
+    <p>السعر: 7,000,000 ل.س</p>
+    <button onclick="addToCart(3)">Add To Cart</button>
+  </li>
+  <li>
+    <img src="pictures/Broom.jpg" alt="مكنسة كهربائية">
+    <h3>مكنسة كهربائية</h3>
+    <p>السعر: 500,000 ل.س</p>
+    <button onclick="addToCart(4)">Add To Cart</button>
+  </li>
+  <li>
+    <img src="pictures/Fan.jpg" alt="مروحة سقف">
+    <h3>مروحة سقف</h3>
+    <p>السعر: 800,000 ل.س</p>
+    <button onclick="addToCart(5)">Add To Cart</button>
+  </li>
+  <li>
+    <img src="pictures/Air conditioner.jpg" alt="مكيف هواء">
+    <h3>مكيف هواء</h3>
+    <p>السعر: 5,000,000 ل.س</p>
+    <button onclick="addToCart(6)">Add To Cart</button>
+  </li>
+  <li>
+    <img src="pictures/Makroev.jpg" alt="ميكرويف كهربائي كينوود 20لتر 700 وات">
+    <h3>ميكرويف كهربائي كينوود 20لتر 700 وات</h3>
+    <p>السعر: 1,200,000 ل.س</p>
+    <button onclick="addToCart(7)">Add To Cart</button>
+  </li>
+  <li>
+    <img src="pictures/Side fan.jpg" alt=" مروحة جانبية">
+    <h3> مروحة جانبية</h3>
+    <p>السعر: 500,000 ل.س</p>
+    <button onclick="addToCart(8)">Add To Cart</button>
+  </li>
+  <li>
+    <img src="pictures/Samsung washing machine.jpg" alt="غسالة سامسونغ 10 كغ">
+    <h3>غسالة سامسونغ 10 كغ</h3>
+    <p>السعر: 12,000,000 ل.س</p>
+    <button onclick="addToCart(9)">Add To Cart</button>
+  </li>
+  <li>
+    <img src="pictures/LG dishwasher.jpg" alt=" غسالة صحون إل جي ">
+    <h3> غسالة صحون إل جي </h3>
+    <p>السعر: 18,800,000 ل.س</p>
+    <button onclick="addToCart(10)">Add To Cart</button>
+  </li>
+</ul>
+  </ul>
+  
+  <h2>سلة التسوق</h2>
+  <table id="cartItems">
+    <tr>
+      <th>#</th>
+      <th>المنتج</th>
+      <th>التفاصيل</th>
+      <th>السعر</th>
+    </tr>
+  </table>
+  
+  <p id="total">المجموع النهائي: 0 ل.س</p>
+  <button class="button continue-button" onclick="submitOrder()"> متابعة</button>
+  <button class="button cancel-button" onclick="cancelCart()">إلغاء </button>
+  
+  <form action="" method="get">
+    
+    <label for="fullName">الاسم الكامل:</label>
+    <input type="text" id="fullName" name="fullName" required><br>
+  
+    <label for="nationalId">الرقم الوطني:</label>
+    <input type="text" id="nationalId" name="nationalId" required><br>
+  
+    <label for="dateOfBirth">تاريخ الولادة:</label>
+    <input type="date" id="dateOfBirth" name="dateOfBirth" required><br>
+  
+    <label for="mobileNumber">رقم الموبايل:</label>
+    <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{9}" required><br>
+  
+    <label for="email">البريد الإلكتروني:</label>
+    <input type="email" id="email" name="email" required><br>
+    <button type="submit">تأكيد الطلب</button>
+    
+  </form>
+
+  
+</body>
+</html>
